@@ -57,6 +57,6 @@ export const verifyRefreshJwt = refreshJWT => {
 
 		return Promise.resolve(decoded);
 	} catch (error) {
-		return Promise.reject(error);
+		return Promise.reject(false);
 	}
 };

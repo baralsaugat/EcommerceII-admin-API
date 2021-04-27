@@ -2,19 +2,24 @@
 ### root access
 GET  http://localhost:8000
 
-### Login api endpoing
+### Login api endpoint
 POST  http://localhost:8000/api/v1/login
 Content-Type: application/json
 
-{
-  "email": "b@c.com",
+{ 
+
+  "email": "saugat@baral.com",
   "password": "123456"
 }
 
+###token end point
+#Refresh fresh accessJWT
+GET http://localhost:8000/api/v1/token
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNhdWdhdEBiYXJhbC5jb20iLCJpYXQiOjE2MTk0ODYzNjQsImV4cCI6MTYyMjA3ODM2NH0.JzeRgmhbYuksQsfAbIGGfo1j9i8Q5oho1mcixxpn4Bs
 ###user routers
 ### get user by id
-GET  http://localhost:8000/api/v1/user
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImJAYy5jb20iLCJpYXQiOjE2MTkzMzAzNTAsImV4cCI6MTYxOTMzMTI1MH0.yB7zipE6-kA26XGWl5NS9cY7nsir0PaH-LqbXfBHuSM
+GET  http://localhost:8000/api/v1/
+Authorization: "$2b$10$/KRlXgpDPJwQAPOhKb/RuOatIzuTHEGwlBHs57bFiNLM09nvY4GCi
 
 
 ### Create a user
@@ -24,7 +29,7 @@ Content-Type: application/json
 {
   "fName": "sfjsd",
   "lName": "sfdkl",
-  "email": "b@c.com",
+  "email": "saugat@baral.com",
   "password": "123456",
   "role": "user"
 }
