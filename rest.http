@@ -42,10 +42,15 @@ Content-Type: application/json
 }
 
 
+### logout api endpoing
+POST http://localhost:8000/api/v1/user/logout
+Content-Type: application/json
+
+{"_id": "6084f1fea2d7e03e8465907e" }
 
 
 ### Categor Zone ####
-### Fetch all category
+### F\
 GET  http://localhost:8000/api/v1/category
  
 
